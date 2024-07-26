@@ -29,7 +29,7 @@
 - rich==12.5.1
 - scikit-learn==1.1.2
 - requests==2.28.1
-
+- 
 ## Environment Requirements of text2event
 - torch==1.7.1
 - transformers==4.4.2
@@ -54,7 +54,6 @@
 - conllu
 - sentencepiece != 0.1.92
 - protobuf
-
 - numpy==1.22
 - tabulate~=0.8.7
 - filelock~=3.0.12
@@ -137,10 +136,24 @@ As shown in DEGREE
 1. Run `RLHF/judgement.sh`
 2. Run `RLHF/select_LLM_SLM.py`
 
-## Citation
+## Acknowledgments and Citations
+This project borrows or uses code from the following projects and resources, for which we are grateful:
+
+- [DEGREE](https://github.com/PlusLabNLP/DEGREE) - Used as the event extraction model for our method. We validated our approach on DEGREE and followed DEGREE's data preprocessing steps.
+- [Text2Event](https://github.com/luyaojie/Text2Event) - Used as the event extraction model for our method. We validated our approach on Text2Event.
+- [RLHF](https://github.com/HarderThenHarder/transformers_tasks/tree/main/RLHF) - Incorporated certain components and methodologies from this repository.
+- [OneIE](https://blender.cs.illinois.edu/software/oneie/) - Incorporated certain components and methodologies from this resource.
+
+We are very grateful for the contributions of the authors of the above projects.
+
+
 If you find that the code is useful in your research, please consider citing our paper.
 
-```bibtex
+```@article{Tian and Guo2024Agent-DA,
+  title={Agent-DA: Enhancing Low-Resource Event Extraction with Collaborative Multi-Agent Data Augmentation},
+  author={Xuemeng Tian, Yikai Guo, Bin Ge, Xiaoguang Yuan, Hang Zang, Yuting Yang, Wenjun ke and Guozheng Li},
+  year={2024}
+}
 ```
 
 ---
